@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  </head>
+  <style>
+    body {
+      background-color: #272044;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    header {
+      max-width: 1200px;
+      margin: 0 auto;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
+        url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/143/144/original/children.png?1726147182");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      text-align: center;
+      padding: 290px 0;
+    }
+
+    header h1 {
+      color: white;
+      font-family: "loved by the king";
+      text-align: center;
+      font-size: 57px;
+      line-height: 1;
+      margin: 0;
+      letter-spacing: 4px;
+      margin-top: 150px;
+    }
+    header p {
+      color: white;
+      font-family: "loved by the king";
+      text-align: center;
+      font-size: 30px;
+      margin: 0;
+      margin-bottom: 55px;
+    }
+
+    .joke {
+      font-size: 50px;
+    }
+    button {
+      padding: 10px;
+      font-size: 16px;
+    }
+  </style>
+
+  <body>
+    <div class="container"></div>
+    <header>
+      <h1>Joke Generator</h1>
+      <p>Sweet jokes for little ones</p>
+      <button id="generate-button">Tell me a joke</button>
+
+      <div id="joke"></div>
+
+      <script src="index.js"></script>
+    </header>
+  </body>
+</html>
